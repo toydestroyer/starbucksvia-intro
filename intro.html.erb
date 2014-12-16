@@ -1,0 +1,220 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag "intro/intro", media: "all" %>
+<% end %>
+
+<% content_for :js do %>
+  <%= javascript_include_tag "intro" %>
+<% end %>
+
+<div id="init-spacer"></div>
+<div id="init">
+  <div id="seq-wrapper">
+    <div id="seq">
+      <%= image_tag "seq/start-frame.png", alt: "", size: "600x700" %>
+    </div>
+    <div class="helpers">
+      <div class="loader"></div>
+      <div class="scroll-down">
+        <div class="scroll">Крутите</div>
+        <div class="arr"></div>
+        <div class="down">Страницу</div>
+      </div>
+    </div>
+  </div>
+  <section id="to-go">
+    <div class="are-you bu orange">Вам</div>
+    <div class="to bu orange">с</div>
+    <div class="go bu brown">собой?</div>
+    <%= image_tag "seq/start-frame.png", alt: "", size: "600x700", class: "start-frame" %>
+  </section>
+  <section id="what-is-your-name">
+    <div class="what-is bu orange">Как</div>
+    <div class="your bu brown">вас</div>
+    <div class="name bu orange">зовут?</div>
+    <div id="set-name-wrapper">
+      <form id="set-name">
+        <fieldset>
+          <input type="text" class="firstname" placeholder="Ваше имя" autocomplete="off" id="set-name-input">
+          <button class="ok bu" type="submit" disabled>Ок</button>
+        </fieldset>
+        <div class="thank-you lu">Спасибо,<br>мы записали!</div>
+      </form>
+    </div>
+    <%= image_tag "seq/start-frame.png", alt: "", size: "600x700", class: "start-frame" %>
+  </section>
+</div>
+<div id="action">
+  <div id="action-spacer"></div>
+  <section id="via-preview">
+    <%= image_tag "sticks/colombia.png", alt: "", size: "102x447", class: "stick" %>
+    <%= image_tag "intro/steam.png", alt: "", size: "202x365", class: "steam" %>
+  </section>
+  <section id="freshly-brewed">
+    <div class="for-you bu white"><span class="firstname-placeholder"></span>, ваш</div>
+    <div class="freshly-brewed bu brown">свежесваренный</div>
+    <div class="to-go bu white">собой</div>
+    <div class="s-above bu white">с</div>
+    <div class="are-ready bu brown">готов!</div>
+    <%= image_tag "sticks/colombia.png", alt: "", size: "51x224", class: "stick" %>
+    <%= image_tag "intro/bag.png", alt: "", size: "498x733", class: "bag" %>
+    <div class="on-the-way bu white">В пути</div>
+  </section>
+  <section id="x-ray">
+    <div class="stick"></div>
+    <%= image_tag "intro/x-bag-left.png", alt: "", size: "527x489", class: "x-bag-left" %>
+    <%= image_tag "intro/x-bag-right.png", alt: "", size: "578x640", class: "x-bag-right" %>
+  </section>
+  <div id="sticks">
+    <%= image_tag "sticks/colombia.png", alt: "", size: "102x447", class: "stick colombia" %>
+    <%= image_tag "sticks/italian-roast.png", alt: "", size: "102x447", class: "stick stagger italian-roast" %>
+    <%= image_tag "sticks/decaf-italian-roast.png", alt: "", size: "102x447", class: "stick stagger decaf-italian-roast" %>
+    <%= image_tag "sticks/veranda.png", alt: "", size: "102x447", class: "stick stagger veranda" %>
+  </div>
+  <div id="features">
+    <section id="at-home-at-work">
+      <%= image_tag "intro/at-home.png", alt: "", size: "374x272", class: "at-home" %>
+      <%= image_tag "intro/at-work.png", alt: "", size: "374x360", class: "at-work" %>
+      <%= image_tag "sticks/colombia.png", alt: "", size: "102x447", class: "stick" %>
+    </section>
+    <section id="handy">
+      <div class="handy bu white">В удобной</div>
+      <div class="pack bu brown">упаковке</div>
+      <div class="cm11 bu white">11 см</div>
+      <%= image_tag "sticks/colombia.png", alt: "", size: "102x447", class: "stick" %>
+    </section>
+    <section id="x12">
+      <div class="x12 bu white">12<span class="brown">&times;</span></div>
+      <%= image_tag "intro/package-colombia.png", alt: "", size: "308x575", class: "package" %>
+      <%= image_tag "sticks/colombia.png", alt: "", size: "102x447", class: "stick" %>
+    </section>
+    <section id="your-favorite">
+      <div class="your bu white">Ваши</div>
+      <div class="favorite bu brown">Любимые</div>
+      <div class="blends bu brown">Сорта</div>
+      <div class="special bu white">Фирменной</div>
+      <div class="roast bu white">Обжарки</div>
+      <div class="starbucks bu brown">Старбакс</div>
+      <a href="/seminars" target="_blank" class="learn-more bu white">Узнайте больше<br>на наших<br>кофе-семинарах</a>
+      <div class="sticks">
+        <%= image_tag "sticks/colombia.png", alt: "", size: "102x447", class: "stick colombia" %>
+        <%= image_tag "sticks/italian-roast.png", alt: "", size: "102x447", class: "stick italian-roast" %>
+        <%= image_tag "sticks/decaf-italian-roast.png", alt: "", size: "102x447", class: "stick decaf-italian-roast" %>
+        <%= image_tag "sticks/veranda.png", alt: "", size: "102x447", class: "stick veranda" %>
+      </div>
+    </section>
+  </div> <!-- / features -->
+  <div id="outro">
+    <section id="always-with-you">
+      <div class="favorite bu brown stagger">Любимый</div>
+      <div class="starbucks-coffee bu brown stagger">Кофе Старбакс &mdash;</div>
+      <div class="now bu orange stagger">теперь</div>
+      <div class="always bu orange stagger">всегда</div>
+      <div class="with-you bu brown stagger">с собой!</div>
+    </section>
+    <section id="is-ready">
+      <div class="firstname bu orange stagger"><span class="firstname-placeholder"></span>,</div>
+      <div class="your-coffee bu brown stagger">Ваш кофе</div>
+      <div class="starbucks bu brown stagger">Старбакс</div>
+      <div class="is-ready bu orange stagger">готов</div>
+      <a href="#get-it" rel="modal:open" class="get-it bu white">Получить</a>
+      <%= image_tag "intro/logo-large.png", alt: "", size: "233x263", class: "logo" %>
+      <%= image_tag "intro/mug.png", alt: "", size: "621x242", class: "mug" %>
+    </section>
+  </div>
+</div>
+<% content_for :modal do %>
+<div class="modal" id="get-it">
+  <div class="header">
+    <%= image_tag "logo.png", alt: "", size: "89x101", class: "logo" %>
+    <div class="headline bu"><span class="firstname-placeholder"></span>, получите<br>в подарок купон<br>на дегустационный набор<br><span class="orange">Starbucks VIA<sup>&reg;</sup>!</span></div>
+  </div>
+  <div class="step1">
+    <form action="/subscribe" method="post" id="subscribe-form">
+      <a href="#" id="vk-oauth-go" title="Войти через ВКонтакте, чтобы сразу получить купон.">
+        <div class="label">Войти через</div>
+        <%= image_tag "vk.png", size: '32x32', alt: "", class: "vk-logo" %>
+        <div class="label">, чтобы сразу получить купон</div>
+      </a>
+      <fieldset>
+        <div class="or-fill">... или заполните форму</div>
+        <input type="text" name="firstname" placeholder="Введите ваше имя" required>
+        <input type="text" name="lastname" placeholder="введите фамилию">
+        <input type="email" name="email" placeholder="ваш email" required>
+        <div class="note">На указанный адрес будет выслан купон</div>
+        <input type="tel" name="phone" placeholder="и телефон">
+      </fieldset>
+      <fieldset class="agree-and-get">
+        <div class="agree">Нажимая кнопку &laquo;Получить купон&raquo; вы даёте согласие<br>на <a href="/agreement" target="_blank">обработку ваших данных</a></div>
+        <button type="submit" class="bu" name="get-coupon">Получить купон</button>
+      </fieldset>
+    </form>
+    <div class="locker">
+      <div class="loader"></div>
+    </div>
+  </div>
+  <div class="step2 hidden">
+    <div class="subscribe">
+      <div class="item">
+        <div class="label lu">ВКонтакте</div>
+        <div class="placeholder vk" id="vk_subscribe"></div>
+      </div>
+<!--       <div class="item">
+        <div id="fb-root"></div>
+        <div class="label lu">Facebook</div>
+        <div class="fb-like" data-href="https://facebook.com/StarbucksRussia" data-width="300" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+      </div>
+      <div class="item">
+        <div class="label lu">Twitter</div>
+        <div style="height: 20px;"><a href="https://twitter.com/StarbucksRussia" class="twitter-follow-button" data-show-count="true" data-lang="ru">Читать @StarbucksRussia</a></div>
+      </div> -->
+    </div>
+    <div class="skip">
+      <a href="#" class="no-thanks">Спасибо, в другой раз</a>
+    </div>
+  </div>
+  <div class="step3 hidden">
+    <div class="coupon">
+      <div class="first-and-lastname"></div>
+      <div class="qr"></div>
+      <div class="number-fallback"></div>
+      <div class="how-to">Покажите этот код бариста на кассе</div>
+      <div class="valid">Срок действия купона:<br><b>до 24 февраля 2014</b></div>
+      <div class="share">
+        <div class="label lu">Поделиться<br>с друзьями</div>
+        <div class="list">
+          <a href="https://vk.com/share.php?url=http%3A%2F%2Fstarbucksvia.ru%2F" target="_blank" class="item share-icon share-vk"></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fstarbucksvia.ru%2F" target="_blank" class="item share-icon share-fb"></a>
+          <a href="https://twitter.com/share?url=http%3A%2F%2Fstarbucksvia.ru%2F" target="_blank" class="item share-icon share-tw"></a>
+        </div>
+      </div>
+      <div class="complete">
+        <div class="label">Купон также выслан на почту<br><b class="email"></b></div>
+        <a href="#" class="print bu" target="_blank">Распечатать</a>
+      </div>
+      <div class="misc">
+        <div class="limited">Акция ограничена во времени и действует<br>при наличии товара в участвующих кофейнях</div>
+        <div class="terms"><a href="/terms" target="_blank">Условия акции</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="step3e hidden">
+    <div class="coupon">
+      <div class="first-and-lastname"></div>
+      <p class="how-to">Купон был отправлен на почту<br><b class="email"></b></p>
+      <p class="valid">Срок действия купона:<br><b>до 24 февраля 2014</b></p>
+      <div class="share">
+        <div class="label lu">Поделиться<br>с друзьями</div>
+        <div class="list">
+          <a href="https://vk.com/share.php?url=http%3A%2F%2Fstarbucksvia.ru%2F" target="_blank" class="item share-icon share-vk"></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fstarbucksvia.ru%2F" target="_blank" class="item share-icon share-fb"></a>
+          <a href="https://twitter.com/share?url=http%3A%2F%2Fstarbucksvia.ru%2F" target="_blank" class="item share-icon share-tw"></a>
+        </div>
+      </div>
+      <div class="misc">
+        <div class="limited">Акция ограничена во времени и действует<br>при наличии товара в участвующих кофейнях</div>
+        <div class="terms"><a href="/terms" target="_blank">Условия акции</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
